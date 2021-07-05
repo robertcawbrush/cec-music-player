@@ -16,14 +16,17 @@ CEC is the name of the server
 - a web player in C (TBD @finlay)
 
 ## local development
-you'll need each servr running on your own machine otherwise they wont be able to talk to one another
+you'll need each server running on your own machine otherwise they won't be able to talk to one another
 
 ## virtual environment
 most of the pain in python development comes from this
 
 1. install python 3 at [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/), make sure the path to wherever you install python is in your path. nothing will work if you can't access
    python from powershell running `python --version`
+1. create a venv instance by running `python -m venv venv` 
 1. on Windows, run `python -m venv ./venv/bin/activate`. On Linux/Darwin run `source ./venv/bin/activate`
+
+you don't need to or want to commit the venv directory its in the .gitignore for a reason
 
 when you are done developing either close the terminal or run `deactivate` the venv will provide this
 
