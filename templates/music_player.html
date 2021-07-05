@@ -8,10 +8,18 @@
 <body>
 <div class="container">
     <div class="well">
-        <div class="card">
-            <h3>this is the audio streamer</h3>
-            <div class="music-player">
-                <p>The music player will go here</p>
+        <div class="row">
+            <div class="card">
+                <h3>this is the audio streamer</h3>
+                {% if file_name %}
+                <div>
+                    <h1>the found file name is { file_name }</h1>
+                </div>
+                {% else %}
+                <div class="music-player">
+                    <p>The music player will go here</p>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
