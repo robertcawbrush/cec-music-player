@@ -21,7 +21,8 @@ you'll need each server running on your own machine otherwise they won't be able
 ## virtual environment
 most of the pain in python development comes from this
 
-1. install python 3 at [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/), make sure the path to wherever you install python is in your path. nothing will work if you can't access
+1. install python 3 at [https://www.python.org/downloads/windows/](https://www.python.org/downloads/windows/), 
+   make sure the path to wherever you install python is in your path. nothing will work if you can't access 
    python from powershell running `python --version`
 1. create a venv instance by running `python -m venv venv`. if this works it won't output anything, but it will make a folder in the root called venv. 
 1. on Windows, run `python -m venv ./venv/bin/activate`. On Linux/Darwin run `source ./venv/bin/activate`
@@ -39,7 +40,8 @@ just run `source.bat` for now. once the discord bot is working you will need to 
 we need to get flask running to serve the web side of the music player
 
 1. python will have also installed `pip` which is pythons package manager, make sure you are in a venv first then run `pip install -r requirements.txt`
-1.in a command line such as cmd or powershell run `set FLASK_APP=cec.py` from the root of this folder, you should be able to see `cec.py` running `dir` this will tell flask what the entrypoint for the server is
+1.in a command line such as cmd or powershell run `set FLASK_APP=cec.py` from the root of this folder, 
+   you should be able to see `cec.py` running `dir` this will tell flask what the entrypoint for the server is
 1. run `flask run` should give you something like this `Running on http://127.0.0.1:5000/` don't close this terminal or you'll shutdown the server
 
 ## start the discord bot
