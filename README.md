@@ -35,7 +35,7 @@ when you are done developing either close the terminal or run `deactivate` the v
 we need to get flask running to serve the web side of the music player
 
 1. python will have also installed `pip` which is pythons package manager, make sure you are in a venv first then run `pip install -r requirements.txt`
-1.in a command line such as cmd or powershell run `set FLASK_APP=hello.pyy` from the root of this folder, you should be able to see `cec.py` running `dir` this will tell flask what the entrypoint for the server is
+1.in a command line such as cmd or powershell run `set FLASK_APP=cec.py` from the root of this folder, you should be able to see `cec.py` running `dir` this will tell flask what the entrypoint for the server is
 1. run `flask run` should give you something like this `Running on http://127.0.0.1:5000/` don't close this terminal or you'll shutdown the server
 
 ## start the discord bot
