@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, make_response
 
 from dotenv import load_dotenv, dotenv_values
 
@@ -22,4 +22,9 @@ def index():
 @app.route('/audio/<file_name>')
 def audio(file_name=None):
     return render_template('music_player.html')
+
+@app.errorhandler(404)
+def not_found(error):
+    resp = make_response(render_template('page_not_found.html'), 404)
+    return resp
 
