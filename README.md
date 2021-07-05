@@ -30,6 +30,10 @@ you don't need to or want to commit the venv directory its in the .gitignore for
 
 when you are done developing either close the terminal or run `deactivate` the venv will provide this
 
+## set environment variables
+we need a bunch of environment variables and a couple of them need to be set as well such as the discord api key, we aren't using this yet. 
+just run `source.bat` for now. once the discord bot is working you will need to set that yourself.
+
 ## start the development server
 
 we need to get flask running to serve the web side of the music player

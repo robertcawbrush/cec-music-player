@@ -18,6 +18,9 @@ def index():
 # listen for message from discord bot then grab the file from the stream or maybe just grab it off the file system of the discord bot
 
 @app.route('/audio')
-def hello():
+@app.route('/audio/<file_name>')
+def audio(file_name=None):
+    if file_name:
+        return f'the file you provided is {file_name}'
     return 'we runnin'
 
