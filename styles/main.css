@@ -1,0 +1,6 @@
+.music-player {
+    display: flex;
+    align-content: center;
+    color: red;
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+}
